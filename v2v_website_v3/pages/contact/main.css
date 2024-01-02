@@ -1,0 +1,195 @@
+*{
+    --purple: #8A2BE2;
+    --yellow: #F4C430; 
+    --white: #f7f7f7;
+    --black: #16161D;
+}
+
+.main-contact-info{
+    min-height: 75vh;
+    background-color: var(--black);
+    box-sizing: border-box;
+    padding: 5rem;
+}
+.prompt{
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 1rem;
+    gap: 1rem;
+    margin-bottom: 4rem;
+}
+.information h3{
+    font-size: 2rem;
+    color: var(--yellow);
+    margin-bottom: 1rem;
+}
+.information p{
+    font-size: 1.5rem;
+    color: var(--white);
+    font-weight: 300;
+}
+.socials{
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 1fr;
+    color: var(--white);
+    font-size: 1.5rem;
+    justify-content: end;
+}
+.socials p{
+    font-size: 1.05rem;
+    justify-self: end;
+}
+
+
+
+.our-team{
+    min-height: 85vh;
+    background-color: var(--white);
+    box-sizing: border-box;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    gap: 3rem;
+    text-align: center;
+}
+.our-team h3{
+    font-size: 3rem;
+    color: var(--purple);
+}
+.our-team p{
+    color: var(--black);
+    font-size: 1.5rem;
+}
+
+.teambox{
+    width: 300px;
+    min-height: 70vh;
+    background-color: transparent;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+.team-member{
+    background-color: var(--black);
+    width: 100%;
+    min-height: 400px;
+    max-height: 500px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 0.15rem;
+    box-sizing: border-box;
+    padding: 1rem;
+    border-radius: 5px;
+}
+.team-member img{
+    width: 95%;
+    margin: auto;
+    height: 275px;
+    margin-bottom: 0.25rem;
+    object-fit: cover;
+}
+.team-member h3{
+    color: var(--yellow);
+    font-size: 2rem;
+}
+.team-member h4{
+    color: var(--white);
+    font-size: 1.05rem;
+    font-weight: 300;
+}
+
+.contact-form{
+    width: 100%;
+
+    box-sizing: border-box;padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    gap: 1.5rem;
+
+}
+.contact-form .input-group{
+    box-sizing: border-box;
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
+}
+.contact-form .input-group input{
+    box-sizing: border-box;
+    padding: 0.5rem;
+    color: var(--purple);
+}
+textarea{
+    box-sizing: border-box;
+    padding: 0.5rem;
+    color: var(--purple);
+    height: 150px;
+}
+.contact-form button{
+    background-color: var(--purple);
+    border: none;
+    color: var(--yellow);
+    box-sizing: border-box;
+    padding: 0.75rem;
+    font-size: 1.25rem;
+    cursor: pointer;
+}
+.contact-form button:hover{
+    background-color: var(--yellow);
+    color: var(--purple);
+    transform: translateY(5px);
+}
+
+
+@media (max-width:1250px) {
+    .teambox{
+        grid-template-columns: 1fr;
+    }
+    .teambox h3{
+        font-size: 1.75rem;
+    }
+    .teambox h4{
+        font-size: 1rem;
+    }
+
+    .main-contact-info{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem;
+
+    }
+    .prompt{
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    .information h3{
+        font-size: 1.75rem;
+        text-align: center;
+    }
+    .information p{
+        text-align: center;
+        font-size: 1.25rem;
+    }
+    .socials{
+        margin-top: 2rem;
+        text-align: center;
+        gap: 1rem;
+    }
+
+    .contact-form .input-group{
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+}

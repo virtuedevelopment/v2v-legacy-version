@@ -1,0 +1,145 @@
+*{
+    --purple: #8A2BE2;
+    --yellow: #F4C430; 
+    --white: #f7f7f7;
+    --black: #16161D;
+}
+.hero{
+    height: 90vh;
+    background-image: linear-gradient(180deg, rgba(22, 22, 29, 0.9) 20.83%, rgba(86, 60, 92, 0.6) 100%),url(/Assets/media/slayedbyjay.JPG);
+    background-position: center;
+    background-size: cover;
+
+    box-sizing: border-box;
+    padding: 2rem;
+    position: relative;
+}
+
+.promptbox{
+    position: relative;
+    left: 5%;
+    top: 30%;
+    width: 60%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    gap: 1rem;
+    
+}
+.promptbox h2{
+    font-size: 3.5rem;
+    color: var(--white);
+}
+.promptbox h1{
+    font-size: 2.3rem;
+    color: #f7f7f7;
+}
+.yellow{
+    font-size: 3.5rem;
+    color: var(--yellow);
+}
+.buttonBox{
+    display: flex;
+    align-items: start;
+    gap: 1rem;
+}
+
+.services{
+    box-sizing: border-box;
+    background-color: var(--white);
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 1rem;
+}
+.servicebox{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+.servicebox h3{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--purple);
+}
+.servicebox p{
+    font-size: 0.85rem;
+    line-height: 2;
+    font-weight: 200;
+    width: 75%;
+}
+
+.about{
+    background-color: var(--black);
+    box-sizing: border-box;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+.information{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1rem;
+}
+.about p{
+    font-size: 1.75rem;
+    line-height: 2;
+    font-weight: 500;
+    color: var(--purple);
+}
+.about img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* MOBILE */
+@media (max-width:1250px) {
+    .hero{
+        padding: 0.5rem;
+    }
+    .promptbox{
+        left: 0;
+        top: 30%;
+        width: 100%;
+        gap: 1.5rem;
+        align-items: center;
+    }
+    .promptbox h2{
+        font-size: 2rem;
+        text-align: center;
+    }
+    .promptbox h1{
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    .yellow{
+        font-size: 2rem;
+    }
+    .services{
+        grid-template-columns: 1fr;
+        gap: 4.5rem;
+    }
+    .about{
+        grid-template-columns: 1fr;
+        padding: 1rem;
+        gap: 3rem;
+    }
+    .about p{
+        font-size: 1.25rem;
+        text-align: center;
+    }
+    .information{
+        align-items: center;
+    }
+}
+
